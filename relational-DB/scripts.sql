@@ -34,7 +34,7 @@ CREATE TABLE cliente(
     cod_cliente NUMERIC(3) PRIMARY KEY,
     nb_cliente VARCHAR(40) NOT NULL,
     ci_rif VARCHAR(10) UNIQUE,
-    telefono VARCHAR(12) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
     direccion VARCHAR(30) NOT NULL,
     sexo CHAR NOT NULL CHECK(sexo in ('M','F')),
     email VARCHAR(45) NOT NULL UNIQUE,
@@ -42,7 +42,7 @@ CREATE TABLE cliente(
 );
 
 CREATE TABLE evaluacion_servicio(
-    cod_evaluacion_servicio NUMERIC(3) PRIMARY KEY, 
+    cod_evaluacion_servicio NUMERIC(2) PRIMARY KEY, 
     nb_descripcion VARCHAR(10) NOT NULL CHECK(nb_descripcion in ('MALO','REGULAR','BUENO','MUY BUENO','EXCELENTE'))
 ); 
 
@@ -56,7 +56,7 @@ CREATE TABLE recomienda (
 
 CREATE TABLE contrato(
     nro_contrato NUMERIC(3) PRIMARY KEY,
-    descrip_contrato VARCHAR(30) NOT NULL
+    descrip_contrato VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE registro_contrato(
@@ -81,7 +81,7 @@ CREATE TABLE registro_siniestro(
     fecha_siniestro DATE NOT NULL,
     fecha_respuesta DATE NOT NULL, 
     id_rechazo VARCHAR(2) CHECK(id_rechazo in ('SI','NO')), 
-    monto_reconocido NUMERIC(6,2) NOT NULL, 
+    monto_reconocido NUMERIC(6,2), 
     monto_solicitado NUMERIC(6,2) NOT NULL,
     CONSTRAINT registro_siniestro_pk PRIMARY KEY(nro_siniestro,nro_contrato) 
 );
