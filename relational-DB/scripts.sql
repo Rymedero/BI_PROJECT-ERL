@@ -8,7 +8,7 @@ CREATE TABLE pais(
 CREATE TABLE ciudad (
     cod_ciudad NUMERIC(2) PRIMARY KEY,
     nb_ciudad VARCHAR(30) NOT NULL,
-    cod_pais NUMERIC(2) NOT NULL REFERENCES pais(cod_pais),
+    cod_pais NUMERIC(2) NOT NULL REFERENCES pais(cod_pais)
 );
 
 CREATE TABLE sucursal(
@@ -19,7 +19,7 @@ CREATE TABLE sucursal(
 
 CREATE TABLE tipo_producto(
     cod_tipo_producto NUMERIC(2) PRIMARY KEY,
-    nb_tipo_producto VARCHAR(45) NOT NULL UNIQUE CHECK(nb_tipo_producto in ('PRESTACION DE SERVICIOS','PERSONALES', 'DAÑOS O PATRIMONIALES'))
+    nb_tipo_producto VARCHAR(45) NOT NULL UNIQUE CHECK(nb_tipo_producto in ('PRESTACION DE SERVICIOS','PERSONALES', 'DAÑOS', 'PATRIMONIALES'))
 );
 
 CREATE TABLE producto (
@@ -83,7 +83,7 @@ CREATE TABLE registro_siniestro(
     id_rechazo VARCHAR(2) CHECK(id_rechazo in ('SI','NO')), 
     monto_reconocido NUMERIC(6,2), 
     monto_solicitado NUMERIC(6,2) NOT NULL,
-    CONSTRAINT registro_siniestro_pk PRIMARY KEY(nro_siniestro,nro_contrato) 
+    CONSTRAINT registro_siniestro_pk PRIMARY KEY(nro_siniestro,nro_contrato,fecha_siniestro) 
 );
 
 CREATE TABLE meta_producto(
