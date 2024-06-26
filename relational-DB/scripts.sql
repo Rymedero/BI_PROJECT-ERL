@@ -19,7 +19,7 @@ CREATE TABLE sucursal(
 
 CREATE TABLE tipo_producto(
     cod_tipo_producto NUMERIC(2) PRIMARY KEY,
-    nb_tipo_producto VARCHAR(45) NOT NULL UNIQUE CHECK(nb_tipo_producto in ('PRESTACION DE SERVICIOS','PERSONALES', 'DAÑOS', 'PATRIMONIALES'))
+    nb_tipo_producto VARCHAR(45) NOT NULL UNIQUE CHECK(nb_tipo_producto in ('PRESTACION DE SERVICIOS','PERSONALES', 'DAÑOS O PATRIMONIALES'))
 );
 
 CREATE TABLE producto (
