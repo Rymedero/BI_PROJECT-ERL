@@ -104,6 +104,8 @@ CREATE TABLE fact_registro_contrato(
     sk_dim_estado_contrato INTEGER REFERENCES dim_estado_contrato(sk_dim_estado_contrato),
     monto NUMERIC NOT NULL,
     cantidad INTEGER,
+    cantidad_cliente  INTEGER,
+    cantidad_producto INTEGER,
     CONSTRAINT pk_fact_registro_contrato PRIMARY KEY (sk_dim_tiempo_fecha_inicio,sk_dim_tiempo_fecha_fin,sk_dim_cliente,sk_dim_contrato,sk_dim_producto)
 );
 
