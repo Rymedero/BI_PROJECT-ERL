@@ -9,18 +9,19 @@ CREATE TABLE dim_cliente(
     ci_rif VARCHAR(45) UNIQUE NOT NULL ,
     telefono VARCHAR(45) UNIQUE NOT NULL,
     direccion VARCHAR(45) NOT NULL,
-    sexo CHAR NOT NULL CHECK(sexo IN ('F','M')),
+    sexo Char(1) NOT NULL CHECK(sexo IN ('F','M')),
     email VARCHAR(45) UNIQUE NOT NULL
 );
 
 CREATE TABLE dim_contrato(
     sk_dim_contrato INTEGER PRIMARY KEY,
     nro_contrato NUMERIC(3) UNIQUE NOT NULL,
-    descrip_contrato VARCHAR(35) NOT NULL
+    descrip_contrato VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE dim_estado_contrato(
     sk_dim_estado_contrato INTEGER PRIMARY KEY,
+	cod_estado NUMERIC(3) NOT NULL UNIQUE, 
     descrip_estado VARCHAR(25) NOT NULL
 );
 
