@@ -118,7 +118,7 @@ CREATE TABLE fact_registro_siniestro(
     sk_dim_producto INTEGER REFERENCES dim_producto(sk_dim_producto),
     sk_dim_siniestro INTEGER REFERENCES dim_siniestro(sk_dim_siniestro),
     cantidad INTEGER NOT NULL,
-    monto_reconocido NUMERIC NOT NULL,
+    monto_reconocido NUMERIC,
     monto_solicitado NUMERIC NOT NULL,
     id_rechazo VARCHAR(2) NOT NULL CHECK(id_rechazo IN ('SI','NO')),
     CONSTRAINT pk_fact_registro_siniestro PRIMARY KEY (sk_dim_fecha_siniestro,sk_dim_fecha_respuesta,sk_dim_cliente,sk_dim_contrato, sk_dim_sucursal,sk_dim_producto,sk_dim_siniestro)    
