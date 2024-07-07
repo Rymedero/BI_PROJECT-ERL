@@ -206,7 +206,7 @@ insert into registro_contrato (nro_contrato, cod_producto, cod_cliente, fecha_in
  (18, 9, 34, to_date('23/11/2023', 'DD/MM/YYYY'), to_date('07/03/2024', 'DD/MM/YYYY'), 912.71, 'ACTIVO'),
  (19, 10, 17, to_date('14/01/2023', 'DD/MM/YYYY'), to_date('28/07/2023', 'DD/MM/YYYY'), 605.4, 'ACTIVO'),
  (20, 11, 22, to_date('10/01/2024', 'DD/MM/YYYY'), to_date('04/06/2024', 'DD/MM/YYYY'), 1390.05, 'ACTIVO'),
- (20, 6, 22, to_date('10/01/2024', 'DD/MM/YYYY'), to_date('04/06/2024', 'DD/MM/YYYY'), 1390.05, 'ACTIVO');
+ (20, 6, 22, to_date('10/02/2024', 'DD/MM/YYYY'), to_date('04/08/2024', 'DD/MM/YYYY'), 1390.05, 'ACTIVO');
 
 
 
