@@ -195,7 +195,18 @@ insert into registro_contrato (nro_contrato, cod_producto, cod_cliente, fecha_in
  (5, 3, 1, to_date('14/02/2023', 'DD/MM/YYYY'), to_date('27/03/2024', 'DD/MM/YYYY'), 2692.41, 'ACTIVO'),
  (7, 3, 24, to_date('18/11/2022', 'DD/MM/YYYY'), to_date('29/10/2023', 'DD/MM/YYYY'), 754.41, 'ACTIVO'),
  (4, 3, 40, to_date('12/09/2021', 'DD/MM/YYYY'), to_date('03/07/2023', 'DD/MM/YYYY'), 3392.9, 'ACTIVO'),
- (9, 1, 11, to_date('01/01/2023', 'DD/MM/YYYY'), to_date('19/01/2024', 'DD/MM/YYYY'), 1522.61, 'SUSPENDIDO');
+ (9, 1, 11, to_date('01/01/2023', 'DD/MM/YYYY'), to_date('19/01/2024', 'DD/MM/YYYY'), 1522.61, 'SUSPENDIDO'),
+ (11, 2, 21, to_date('14/06/2023', 'DD/MM/YYYY'), to_date('07/04/2024', 'DD/MM/YYYY'), 1912.97, 'ACTIVO'),
+ (12, 3, 23, to_date('13/08/2023', 'DD/MM/YYYY'), to_date('08/06/2024', 'DD/MM/YYYY'), 1902.97, 'ACTIVO'),
+ (13, 4, 2, to_date('28/05/2023', 'DD/MM/YYYY'), to_date('08/08/2023', 'DD/MM/YYYY'), 852.8, 'ACTIVO'),
+ (14, 5, 12, to_date('30/01/2023', 'DD/MM/YYYY'), to_date('11/08/2023', 'DD/MM/YYYY'), 471.74, 'ACTIVO'),
+ (15, 6, 7, to_date('15/02/2023', 'DD/MM/YYYY'), to_date('14/12/2023', 'DD/MM/YYYY'), 1731.66, 'ACTIVO'),
+ (16, 7, 30, to_date('24/01/2024', 'DD/MM/YYYY'), to_date('22/02/2024', 'DD/MM/YYYY'), 882.08, 'ACTIVO'),
+ (17, 8, 7, to_date('27/09/2023', 'DD/MM/YYYY'), to_date('14/01/2024', 'DD/MM/YYYY'), 1922.15, 'ACTIVO'),
+ (18, 9, 34, to_date('23/11/2023', 'DD/MM/YYYY'), to_date('07/03/2024', 'DD/MM/YYYY'), 912.71, 'ACTIVO'),
+ (19, 10, 17, to_date('14/01/2023', 'DD/MM/YYYY'), to_date('28/07/2023', 'DD/MM/YYYY'), 605.4, 'ACTIVO'),
+ (20, 11, 22, to_date('10/01/2024', 'DD/MM/YYYY'), to_date('04/06/2024', 'DD/MM/YYYY'), 1390.05, 'ACTIVO'),
+ (20, 6, 22, to_date('10/02/2024', 'DD/MM/YYYY'), to_date('04/08/2024', 'DD/MM/YYYY'), 1390.05, 'ACTIVO');
 
 
 
