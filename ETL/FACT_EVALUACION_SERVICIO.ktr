@@ -611,7 +611,7 @@
     <hop>
       <from>Select values 2</from>
       <to>Insert / update</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sort rows 5</from>

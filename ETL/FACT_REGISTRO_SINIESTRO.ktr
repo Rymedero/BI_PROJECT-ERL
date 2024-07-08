@@ -711,7 +711,7 @@
     <hop>
       <from>Select values 9</from>
       <to>Insert / update 4</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
   </order>
   <step>
